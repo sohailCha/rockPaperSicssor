@@ -9,19 +9,15 @@ public class Game {
             output = 1;
         } else if(computerPick.equals("Rock") && userPick.equals("Scissor")){
             output = 0;
-        } else if(computerPick.equals("Rock") && userPick.equals("Rock")){
-            output = 2;
         } else if(computerPick.equals("Paper") && userPick.equals("Scissor")){
             output = 1;
         } else if(computerPick.equals("Paper") && userPick.equals("Rock")){
             output = 0;
-        } else if(computerPick.equals("Paper") && userPick.equals("Paper")){
-            output = 2;
         } else if(computerPick.equals("Scissor") && userPick.equals("Rock")){
             output = 1;
         } else if(computerPick.equals("Scissor") && userPick.equals("Paper")){
             output = 0;
-        } else if(computerPick.equals("Scissor") && userPick.equals("Scissor")){
+        } else if(computerPick.equals(userPick)){
             output = 2;
         }
         return output;
